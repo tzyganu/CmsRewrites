@@ -1,0 +1,31 @@
+<?php
+/**
+ * Easylife_CmsRewrites extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_EASYLIFE_CMSREWRITES.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_CmsRewrites
+ * @copyright      Copyright (c) 2013
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+?>
+<div class="option-box box fieldset" id="row_<?php echo $this->getIncrement()?>">
+    <div>
+        <div>
+            <button class="scalable delete" type="button" title="<?php echo $this->__('Remove')?>">
+                <span>
+                    <span>
+                        <span><?php echo $this->__('Remove')?></span>
+                    </span>
+                </span>
+            </button>
+        </div>
+        <?php echo $this->getFormHtml();?>
+    </div>
+</div>

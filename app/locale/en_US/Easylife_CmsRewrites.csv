@@ -1,0 +1,14 @@
+"%s Url rewrites were created","%s Url rewrites were created"
+"Add CMS pages rewrites","Add CMS pages rewrites"
+"Add at least one rewrite","Add at least one rewrite"
+"Add rewrite","Add rewrite"
+"Are you sure?","Are you sure?"
+"Cms Pages Url Rewrites","Cms Pages Url Rewrites"
+"No Url rewrite found","No Url rewrite found"
+"Please select URL rewrites to delete.","Please select URL rewrites to delete."
+Redirect,Redirect
+Remove,Remove
+"Rewrite %s","Rewrite %s"
+"Store %s","Store %s"
+"There was an error deleting URL rewrites.","There was an error deleting URL rewrites."
+"Total of %d URL rewrites were successfully deleted.","Total of %d URL rewrites were successfully deleted."

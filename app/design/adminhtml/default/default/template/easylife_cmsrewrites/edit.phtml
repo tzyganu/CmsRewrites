@@ -1,0 +1,39 @@
+<?php
+/**
+ * Easylife_CmsRewrites extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_EASYLIFE_CMSREWRITES.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_CmsRewrites
+ * @copyright      Copyright (c) 2013
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+?>
+<div class="content-header">
+    <h3 class="icon-head"><?php echo $this->getHeaderText() ?></h3>
+    <p class="form-buttons"><?php echo $this->getButtonsHtml('header') ?></p>
+</div>
+<form action="<?php echo $this->getSaveUrl() ?>" method="post" id="edit_form" enctype="multipart/form-data">
+    <?php echo $this->getBlockHtml('formkey')?>
+    <div style="display:none"></div>
+    <div id="rewrites-wrapper">
+
+    </div>
+</form>
+<script type="text/javascript">
+    var editForm = new varienForm('edit_form');
+    var rewrites = '';
+    document.observe("dom:loaded", function() {
+        rewrites = new CMSRewrite.Rewrite({});
+        rewrites.addRow();
+    });
+</script>
+<div id="rewrite_template" style="display:none">
+    <?php echo $this->getChildHtml('line-template');?>
+</div>

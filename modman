@@ -1,0 +1,7 @@
+#Easylife Cms Rewrites
+app/etc/modules/Easylife_CmsRewrites.xml	app/etc/modules/Easylife_CmsRewrites.xml
+app/code/community/Easylife/CmsRewrites	app/code/community/Easylife/CmsRewrites
+app/locale/en_US/Easylife_CmsRewrites.csv	app/locale/en_US/Easylife_CmsRewrites.csv
+app/design/adminhtml/default/default/layout/easylife_cmsrewrites.xml	app/design/adminhtml/default/default/layout/easylife_cmsrewrites.xml
+app/design/adminhtml/default/default/template/easylife_cmsrewrites	app/design/adminhtml/default/default/template/easylife_cmsrewrites
+js/easylife_cmsrewrites/rewrite.js	js/easylife_cmsrewrites/rewrite.js

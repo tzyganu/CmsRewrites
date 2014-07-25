@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Easylife_CmsRewrites extension
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE_EASYLIFE_CMSREWRITES.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+*
+* @category       Easylife
+* @package        Easylife_CmsRewrites
+* @copyright      Copyright (c) 2013
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Easylife_CmsRewrites>
+            <version>0.1.0</version>
+        </Easylife_CmsRewrites>
+    </modules>
+    <global>
+        <helpers>
+            <easylife_cmsrewrites>
+                <class>Easylife_CmsRewrites_Helper</class>
+            </easylife_cmsrewrites>
+        </helpers>
+        <blocks>
+            <easylife_cmsrewrites>
+                <class>Easylife_CmsRewrites_Block</class>
+            </easylife_cmsrewrites>
+        </blocks>
+        <models>
+            <easylife_cmsrewrites>
+                <class>Easylife_CmsRewrites_Model</class>
+            </easylife_cmsrewrites>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Easylife_CmsRewrites before="Mage_Adminhtml">Easylife_CmsRewrites_Adminhtml</Easylife_CmsRewrites>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <easylife_cmsrewrites>
+                        <class>easylife_cmsrewrites/observer</class>
+                        <method>addMassAction</method>
+                    </easylife_cmsrewrites>
+                </observers>
+            </adminhtml_block_html_before>
+        </events>
+        <layout>
+            <updates>
+                <easylife_cmsrewrites>
+                    <file>easylife_cmsrewrites.xml</file>
+                </easylife_cmsrewrites>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Easylife_CmsRewrites>
+                    <files>
+                        <default>Easylife_CmsRewrites.csv</default>
+                    </files>
+                </Easylife_CmsRewrites>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
