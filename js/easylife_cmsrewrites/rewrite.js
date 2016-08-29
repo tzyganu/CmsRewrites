@@ -51,4 +51,4 @@ CMSRewrite.Rewrite.prototype = {
             $('row_' + index).remove();
         }
     }
-}
+};
